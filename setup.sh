@@ -2,11 +2,12 @@
 
 setup_linux()
 {
-	
+	mkdir -p /usr/bin/authnix	
 }
 
 setup_termux()
 {
+	mkdir -p /data/data/com.termux/files/usr/share/authnix
 	
 }
 
