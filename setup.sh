@@ -1,5 +1,25 @@
 #!/usr/bin/bash
 
+green='\033[1;32m'
+red='\033[1;31m'
+white='\033[1;37m'
+cyan='\033[0;36m'
+
+if [[ $(command -v python3) ]]; then
+    echo -e "${white} [${green}+${white}] ${green}Python 3 is installed."
+else
+    echo -e "${white} [${red}+${white}] ${red}Python 3 command not found. To install Python 3, please execute the installation command: 'apt install python3'."
+    exit
+fi
+
+if [[ $(command -v ruby) ]]; then
+    echo -e "${white} [${green}+${white}] ${green}Ruby is installed."
+else
+    echo -e "${white} [${red}+${white}] ${red}Ruby command not found. To install Ruby, please execute the installation command: 'apt install ruby'."
+    exit
+fi
+
+
 setup_linux()
 {
 	mkdir -p /usr/share/authnix	
