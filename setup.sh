@@ -30,7 +30,11 @@ packages()
 
 verify_code()
 {
-	
+	if [[ $(command -v authnix) ]]; then
+		echo ""
+	else
+		exit
+	fi
 }
 
 setup_linux()
