@@ -51,6 +51,14 @@ setup_linux()
 	chmod +x /usr/bin/authnixsubdomain
 }
 
+if [[ $1 == "restart" ]]; then
+	echo "Restart"
+elif [[ $(command -v authnix) ]]; then
+	echo ""
+else
+	echo ""
+fi
+
 setup_termux()
 {
 	mkdir -p /data/data/com.termux/files/usr/share/authnix
