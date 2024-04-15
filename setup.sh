@@ -10,7 +10,8 @@ setup_linux()
 	cp -p src/authnix /usr/bin/
 	chmod +x /usr/bin/authnix
 	cp -p subdomain/domain.txt /usr/share/authnix/subdomain/
-	
+	cp -p subdomain/authnixsubdomain /usr/bin/authnixsubdomain
+	chmod +x /usr/bin/authnixsubdomain
 }
 
 setup_termux()
@@ -23,6 +24,8 @@ setup_termux()
 	cp -p src/authnix /data/data/com.termux/files/usr/bin/
 	chmod +x /data/data/com.termux/files/usr/bin/authnix
 	cp -p subdomain/domain.txt /data/data/com.termux/files/usr/share/authnix/subdomain/
+	cp -p subdomain/authnixsubdomain /data/data/com.termux/files/usr/bin/
+	chmod +x /data/data/com.termux/files/usr/bin/authnixsubdomain
 }
 
 main()
