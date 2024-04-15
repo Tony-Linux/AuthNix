@@ -3,12 +3,13 @@
 setup_linux()
 {
 	mkdir -p /usr/bin/authnix	
+	cp -p password /usr/bin/authnix/
 }
 
 setup_termux()
 {
 	mkdir -p /data/data/com.termux/files/usr/share/authnix
-	
+	cp -p password /data/data/com.termux/files/usr/share/authnix/
 }
 
 main()
