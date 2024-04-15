@@ -20,6 +20,11 @@ packages()
     	echo -e "${white} [${red}+${white}] ${red}Ruby command not found. To install Ruby, please execute the installation command: 'apt install ruby'."
     	exit
 	fi
+	if python3 -c "import requests" &> /dev/null; then
+	    echo "${white} [${green}+${white}] ${green}Requests package is installed."
+	else
+	    echo "${white} [${red}+${white}] ${red}Requests package not found. Please install it using: 'pip install requests'."
+	fi
 }
 
 setup_linux()
