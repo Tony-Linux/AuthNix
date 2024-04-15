@@ -1,6 +1,14 @@
 #!/usr/bin/bash
 
+setup_linux()
+{
+	
+}
 
+setup_termux()
+{
+	
+}
 
 main()
 {
