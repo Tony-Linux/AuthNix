@@ -51,10 +51,9 @@ setup_linux()
 	chmod +x /usr/bin/authnixsubdomain
 }
 
-if [[ $1 == "restart" ]]; then
-	echo "Restart"
-elif [[ $(command -v authnix) ]]; then
-	echo ""
+if [[ $(command -v authnix) ]]; then
+	echo "${white} [${green}+${white}] ${green}authnix is already installed on your system, please try again"
+	packages
 else
 	echo ""
 fi
