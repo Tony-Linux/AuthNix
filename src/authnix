@@ -4,3 +4,9 @@ empty_help()
 {
 	echo "Help Command"
 }
+
+if [[ $1 == "--help" ]] || [[ $1 == "-h" ]]; then
+	empty_help
+else
+	empty_help
+fi
