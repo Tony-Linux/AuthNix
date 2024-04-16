@@ -53,6 +53,7 @@ setup_linux()
 
 if [[ $(command -v authnix) ]]; then
 	echo "${white} [${green}+${white}] ${green}authnix is already installed on your system, please try again"
+	sleep 3
 	packages
 else
 	echo ""
