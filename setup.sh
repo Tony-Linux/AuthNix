@@ -1,5 +1,15 @@
 #!/usr/bin/bash
 
+############################################################################
+#          Copyright (c) 2024 Tony-Linux. All rights reserved.             #
+#       If you want a useful project like this contact us:                 #
+#                    pucham@proton.me                                      #
+#   You can also create similar projects in collaboration with us          #
+#                         Invite: mr-fidal                                 #
+#   This code is copyrighted and may not be copied or edited without the   #
+#            express written permission of the copyright holder.           #
+############################################################################
+
 green='\033[1;32m'
 red='\033[1;31m'
 white='\033[1;37m'
