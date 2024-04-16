@@ -1,11 +1,6 @@
 #!/usr/bin/bash
 
-############################################################################
-#          Copyright (c) 2024 Tony-Linux. All rights reserved.             #
-#       If you want a useful project like this contact us:                 #
-#                    pucham@proton.me                                      #
-#   You can also create similar projects in collaboration with us          #
-#                         Invite: mr-fidal                                 #
-#   This code is copyrighted and may not be copied or edited without the   #
-#            express written permission of the copyright holder.           #
-############################################################################
+empty_help()
+{
+	echo "Help Command"
+}
