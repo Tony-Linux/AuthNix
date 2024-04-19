@@ -2,11 +2,38 @@
 
 empty_help()
 {
-	echo "Help Command"
+	echo "Help Command $1"
+}
+
+verify_login_url() 
+{
+	local url="$1"
+	local response_code=$(curl -sL -w "%{http_code}\\n" "$url" -o /dev/null)
+
+	if [[ $response_code -eq 200 ]]; then
+		echo "Website is valid: $url"
+	else
+		echo "Website is not valid: $url"
+		exit
+	fi
 }
 
 if [[ $1 == "--help" ]] || [[ $1 == "-h" ]]; then
 	empty_help
+elif [[ $1 == "--login-brute" ]] && [[ $2 == "--url" ]]; then
+	if [ -x $3 ]; then
+		empty_help
+	else
+		login-url="$3"
+		verify_login_url $login-url
+	fi
+	if [ -x $5 ]; then
+		empty_help
+	else
+		login-username="$5"
+		brute_force_attack
+	fi
+elif [[ $1 == 
 else
-	empty_help
+	empty_help hello
 fi
